@@ -76,7 +76,7 @@
     <input type="number" id="maruf" placeholder="Maruf tk amount">
     <input type="number" id="rohim" placeholder="Rohim tk amount">
     <input type="number" id="wahid" placeholder="Wahid tk amount">
-    <input type="number" id="jisan" placeholder="Jisan tk amount">
+    <input type="number" id="5th" placeholder="5th tk amount">
 
     <h2>Mil Count</h2>
 
@@ -84,7 +84,7 @@
     <input type="number" id="maruf1" placeholder="Maruf mil amount">
     <input type="number" id="rohim1" placeholder="Rohim mil amount">
     <input type="number" id="wahid1" placeholder="Wahid mil amount">
-    <input type="number" id="jisan1" placeholder="Jisan mil amount">
+    <input type="number" id="5th1" placeholder="5th mil amount">
 
     <h2>Bazer</h2>
 
@@ -104,19 +104,19 @@ function calculate() {
     let maruf = parseFloat(document.getElementById("maruf").value) || 0;
     let rohim = parseFloat(document.getElementById("rohim").value) || 0;
     let wahid = parseFloat(document.getElementById("wahid").value) || 0;
-    let jisan = parseFloat(document.getElementById("jisan").value) || 0;
+    let jisan = parseFloat(document.getElementById("5th").value) || 0;
 
     let siam1 = parseFloat(document.getElementById("siam1").value) || 0;
     let maruf1 = parseFloat(document.getElementById("maruf1").value) || 0;
     let rohim1 = parseFloat(document.getElementById("rohim1").value) || 0;
     let wahid1 = parseFloat(document.getElementById("wahid1").value) || 0;
-    let jisan1 = parseFloat(document.getElementById("jisan1").value) || 0;
+    let jisan1 = parseFloat(document.getElementById("5th1").value) || 0;
 
     let bazer = parseFloat(document.getElementById("bazer").value) || 0;
 
-    let totalTk = siam + maruf + rohim + wahid + jisan;
+    let totalTk = siam + maruf + rohim + wahid + 5th;
 
-    let totalMil = siam1 + maruf1 + rohim1 + wahid1 + jisan1;
+    let totalMil = siam1 + maruf1 + rohim1 + wahid1 + 5th;
 
     let milRate = bazer / totalMil;
 
